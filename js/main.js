@@ -3,7 +3,9 @@ const {createApp} = Vue;
 const app =  createApp({
     data(){
         return{
-            toDo: []
+            toDo: [],
+            newTask: {
+            }
         }
     },
     methods: {
@@ -12,6 +14,15 @@ const app =  createApp({
             axios.get("api/toDoList.php")
                 .then (resp => {
                     this.toDo = resp.data;
+                })
+        },
+        //aggiungere un nuovo task alla lista
+        submitForm(){
+            axios.post("api/createTask.php", this.newTask, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
+                .then(resp => {
+                    this.fetchListToDo();
                 })
         }
     },

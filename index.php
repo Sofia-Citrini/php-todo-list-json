@@ -1,4 +1,6 @@
 <?php
+
+
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +44,10 @@
                     </div>
 
                     <!-- campo di input testuale -->
-                    <form class="input-group my-3 d-flex">
-                        <input type="text" class="form-control" placeholder="Inserisci elemento...">
-                        <button class="btn btn-outline-warning" type="submit">
+                    <form class="input-group my-3 d-flex" @submit.prevent="submitForm">
+                        <input type="text" class="form-control" placeholder="Inserisci elemento..."
+                            name="newTask" v-model="newTask.text">
+                        <button class="btn btn-outline-warning">
                             <i class="fa-solid fa-plus"></i>
                             Inserisci
                         </button>

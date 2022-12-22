@@ -1,26 +1,26 @@
 [
     {
-      "text": "HTML",
-      "done": "false"
+        "text": "HTML",
+        "done": "false"
     },
     {
-      "text": "CSS",
-      "done": "false"
+        "text": "CSS",
+        "done": "false"
     },
     {
-      "text": "Responsive design",
-      "done": "false"
+        "text": "Responsive design",
+        "done": "false"
     },
     {
-      "text": "Javascript",
-      "done": "false"
+        "text": "Javascript",
+        "done": "false"
     },
     {
-      "text": "PHP",
-      "done": "false"
+        "text": "PHP",
+        "done": "false"
     },
     {
-      "text": "Laravel",
-      "done": "false"
+        "text": "Laravel",
+        "done": "false"
     }
-  ]
+]
