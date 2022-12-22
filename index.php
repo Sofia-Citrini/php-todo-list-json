@@ -30,10 +30,10 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 list-group list-group-flush">
                     <!-- elementi to do list -->
-                    <div class="list-group-item">
+                    <div class="list-group-item" v-for="element in toDo">
                         <label for="" class="d-flex align-items-center justify-content-between">
                             <!-- testo -->
-                            <div class="flex-fill px-3">ciao</div>
+                            <div class="flex-fill px-3">{{element.text}}</div>
                             <!-- button: cancella task-->
                             <button class="btn btn-danger">
                                 <i class="fa-regular fa-trash-can"></i>
