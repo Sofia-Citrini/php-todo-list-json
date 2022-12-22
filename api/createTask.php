@@ -5,7 +5,7 @@ $toDoList = file_get_contents("../toDoList.json");
 $toDoList = json_decode($toDoList, true);
 
 $newTask = [
-    "text" => $_POST["newTask"],
+    "text" => $_POST["text"],
     "done" => "false"
 ];
 
